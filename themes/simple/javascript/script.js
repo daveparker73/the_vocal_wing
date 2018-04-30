@@ -1,5 +1,3 @@
-jQuery.noConflict();
-
 (function($) {
 	$(document).ready(function() {
 		/* removes text from search form on focus and replaces it on unfocus - if text is entered then it does not get replaced with default on unfocus */
@@ -17,6 +15,16 @@ jQuery.noConflict();
 					searchField.val(default_value);
 			  }
 		});
+		
+		jQuery.browser = {};
+	    (function () {
+	        jQuery.browser.msie = false;
+	        jQuery.browser.version = 0;
+	        if (navigator.userAgent.match(/MSIE ([0-9]+)\./)) {
+	            jQuery.browser.msie = true;
+	            jQuery.browser.version = RegExp.$1;
+	        }
+	    })();
 
 		if (!$.browser.msie || ($.browser.msie && (parseInt($.browser.version, 10) > 8))) {
 			var searchBarButton = $("span.search-dropdown-icon");

@@ -1,8 +1,7 @@
-<nav class="primary">
-	<span class="nav-open-button">²</span>
+<div class="col-xs-10 text-right menu-1 main-nav">
 	<ul>
 		<% loop $Menu(1) %>
-			<li class="$LinkingMode"><a href="$Link" title="$Title.XML">$MenuTitle.XML</a></li>
+			<li><a href="$Link" data-nav-section="$Title.XML">$MenuTitle.XML</a></li>
 		<% end_loop %>
 	</ul>
-</nav>
+</div>
