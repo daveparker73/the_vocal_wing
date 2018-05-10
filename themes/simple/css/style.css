@@ -1,4 +1,11 @@
 @font-face {
+	font-family: 'broadway';
+	src:url('../fonts/broadway/broadway.ttf?-fvbane') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
   font-family: 'icomoon';
   src: url("../fonts/icomoon/icomoon.eot?srf3rx");
   src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
@@ -774,10 +781,13 @@ form label {
 #gtco-header .display-tc h1,
 .gtco-cover .display-tc h1 {
   margin-bottom: 30px;
-  font-size: 59px;
+  font-family: broadway;
+  font-size: 75px;
   line-height: 1.5;
   font-weight: 100;
+  max-width: 400px;
 }
+
 @media screen and (max-width: 768px) {
   #gtco-header .display-tc h1,
   .gtco-cover .display-tc h1 {
