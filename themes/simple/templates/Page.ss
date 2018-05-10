@@ -8,7 +8,7 @@
 <html>
 	<head>
 		<% base_tag %>
-		<title><% if $MetaTitle %>$MetaTitle<% else %>$Title<% end_if %> &raquo; $SiteConfig.Title</title>
+		<title>$SiteConfig.Title</title>
 		
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -46,14 +46,14 @@
 
 			<% include Header %>
 			
-			<section id="gtco-hero" class="gtco-cover" data-section="home"  data-stellar-background-ratio="0.5">
+			<section id="gtco-hero" class="gtco-cover" data-section="home" style="background-image: url({$ThemeDir}/images/bg-mic.jpg);" data-stellar-background-ratio="0.5">
 				<div class="overlay"></div>
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12 col-md-offset-0 text-center">
 							<div class="display-t">
 								<div class="display-tc">
-									<h1 class="animate-box" data-animate-effect="fadeIn">The Vocal Wing</h1>
+									<h1 class="animate-box" data-animate-effect="fadeIn">$SiteConfig.Title</h1>
 								</div>
 							</div>
 						</div>
@@ -63,108 +63,6 @@
 			
 			$Layout
 			
-			<section id="gtco-about" data-section="about">
-				<div class="container">
-					<div class="row row-pb-md">
-						<div class="col-md-8 col-md-offset-2 heading animate-box" data-animate-effect="fadeIn">
-							<h1>Welcome To Our Law Offices</h1>
-							<p class="sub">Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
-							<p class="animate-box" data-animate-effect="fadeIn">Welcome</p>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-6 col-md-pull-1 animate-box" data-animate-effect="fadeInLeft">
-							<div class="img-shadow">
-								
-							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-							<h2 class="heading-colored">Excellence &amp; Honesty</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid aut praesentium nihil hic quam culpa magnam ducimus suscipit repellat quidem cumque, unde impedit, labore earum eligendi perspiciatis nemo molestiae sequi veritatis. Veritatis, reprehenderit, eaque! Rerum, libero ipsam enim, iusto adipisci quae repellendus officia consequatur ducimus cupiditate impedit, aliquam numquam excepturi.</p>
-							<p><a href="#" class="read-more">Read more <i class="icon-chevron-right"></i></a></p>
-						</div>
-					</div>
-				</div>
-			</section>
-		
-			<section id="gtco-practice-areas" data-section="practice-areas">
-				<div class="container">
-					<div class="row row-pb-md">
-						<div class="col-md-8 col-md-offset-2 heading animate-box" data-animate-effect="fadeIn">
-							<h1>Practice Areas</h1>
-							<p class="sub">Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
-							<p class="animate-box" data-animate-effect="fadeIn">Practice <span>Areas</span></p>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-6">
-							<div class="gtco-practice-area-item animate-box">
-								<div class="gtco-icon">
-								
-								</div>
-								<div class="gtco-copy">
-									<h3>Criminal Law</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed scelerisque sapien. Sed sodales, libero non faucibus rutrum, purus tellus finibus diam, eget ornare tortor leo eget erat. </p>
-								</div>
-							</div>
-		
-							<div class="gtco-practice-area-item animate-box">
-								<div class="gtco-icon">
-									
-								</div>
-								<div class="gtco-copy">
-									<h3>Industrial Law</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed scelerisque sapien. Sed sodales, libero non faucibus rutrum, purus tellus finibus diam, eget ornare tortor leo eget erat. </p>
-								</div>
-							</div>
-		
-							<div class="gtco-practice-area-item animate-box">
-								<div class="gtco-icon">
-
-								</div>
-								<div class="gtco-copy">
-									<h3>Financial Law</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed scelerisque sapien. Sed sodales, libero non faucibus rutrum, purus tellus finibus diam, eget ornare tortor leo eget erat. </p>
-								</div>
-							</div>
-		
-						</div>
-						<div class="col-md-6">
-							
-							<div class="gtco-practice-area-item animate-box">
-								<div class="gtco-icon">
-									
-								</div>
-								<div class="gtco-copy">
-									<h3>Divorce Law</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed scelerisque sapien. Sed sodales, libero non faucibus rutrum, purus tellus finibus diam, eget ornare tortor leo eget erat. </p>
-								</div>
-							</div>
-		
-							<div class="gtco-practice-area-item animate-box">
-								<div class="gtco-icon">
-			
-								</div>
-								<div class="gtco-copy">
-									<h3>Corporate Law</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed scelerisque sapien. Sed sodales, libero non faucibus rutrum, purus tellus finibus diam, eget ornare tortor leo eget erat. </p>
-								</div>
-							</div>
-		
-							<div class="gtco-practice-area-item animate-box">
-								<div class="gtco-icon">
-									
-								</div>
-								<div class="gtco-copy">
-									<h3>Accident Law</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed scelerisque sapien. Sed sodales, libero non faucibus rutrum, purus tellus finibus diam, eget ornare tortor leo eget erat. </p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-		
 			<% include Footer %>
 			
 		</div>

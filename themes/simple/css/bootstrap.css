@@ -369,6 +369,9 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  float: right;
+  padding-left: 20px;
+  padding-bottom: 20px;
 }
 
 .img-rounded {
@@ -487,7 +490,7 @@ h6 .small, .h6 small,
 }
 
 h1, .h1 {
-  font-size: 36px;
+  font-size: 40px;
 }
 
 h2, .h2 {

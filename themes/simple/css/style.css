@@ -61,7 +61,7 @@ p {
 h1, h2, h3, h4, h5, h6, figure {
   color: #000;
   font-family: "Open Sans", Arial, sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   margin: 0 0 30px 0;
 }
 
@@ -86,7 +86,7 @@ h1, h2, h3, h4, h5, h6, figure {
   margin: 0;
   padding: 0;
   width: 100%;
-  padding: 20px 0;
+  padding: 20px 0px 0px 0px;
   z-index: 1001;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
@@ -119,6 +119,10 @@ h1, h2, h3, h4, h5, h6, figure {
   -webkit-transition: 0.4s;
   -o-transition: 0.4s;
   transition: 0.4s;
+}
+.gtco-nav #gtco-logo img{
+    max-height: 150px;
+    margin-top: -56px;
 }
 @media screen and (max-width: 768px) {
   .gtco-nav .menu-1, .gtco-nav .menu-2 {
@@ -237,7 +241,7 @@ h1, h2, h3, h4, h5, h6, figure {
   color: #fff !important;
 }
 .gtco-nav.scrolled {
-  background: #fff;
+  background: #D3D3D3;
   webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.15);
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.15);
@@ -259,14 +263,14 @@ h1, h2, h3, h4, h5, h6, figure {
   color: black;
 }
 .gtco-nav.scrolled ul li.active > a {
-  color: #7ED321 !important;
+  color: #505050 !important;
 }
 .gtco-nav.scrolled ul li.btn-cta a {
   color: #fff;
 }
 .gtco-nav.scrolled ul li.btn-cta a span {
   border: none !important;
-  background: #7ED321;
+  background: #505050;
   padding: 4px 20px;
   color: #fff;
 }
@@ -491,11 +495,8 @@ h1, h2, h3, h4, h5, h6, figure {
   color: #fff !important;
 }
 
-#gtco-about,
-#gtco-practice-areas,
-#gtco-our-team,
-#gtco-contact {
-  padding: 7em 0;
+.gtco {
+  padding: 6em 0;
   clear: both;
 }
 
@@ -638,10 +639,6 @@ h1, h2, h3, h4, h5, h6, figure {
   resize: vertical;
 }
 
-.heading {
-  text-align: center;
-  margin-bottom: 70px;
-}
 .heading h1 {
   margin-bottom: 10px;
 }
@@ -668,7 +665,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .heading-colored {
-  color: #7ED321;
+  color: #000;
 }
 
 .read-more i {
@@ -996,7 +993,7 @@ form label {
   text-decoration: none;
 }
 .gtco-nav-toggle.active i::before, .gtco-nav-toggle.active i::after {
-  background: #444;
+  background: #fff;
 }
 .gtco-nav-toggle:hover, .gtco-nav-toggle:focus, .gtco-nav-toggle:active {
   outline: none;
@@ -1007,18 +1004,18 @@ form label {
   display: inline-block;
   width: 25px;
   height: 2px;
-  color: #252525;
+  color: #fff;
   font: bold 14px/.4 Helvetica;
   text-transform: uppercase;
   text-indent: -55px;
-  background: #252525;
+  background: #fff;
   transition: all .2s ease-out;
 }
 .gtco-nav-toggle i::before, .gtco-nav-toggle i::after {
   content: '';
   width: 25px;
   height: 2px;
-  background: #252525;
+  background: #fff;
   position: absolute;
   left: 0;
   transition: all .2s ease-out;

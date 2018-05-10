@@ -2,7 +2,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-2 col-xs-12">
-				<div id="gtco-logo"><a href="index.html">$SiteConfig.Title</a></div>
+				<div id="gtco-logo"><a href="/"><img class="logo" src="{$ThemeDir}/images/VocalWing-logo.png"/></a></div>
 			</div>
 			<% include Navigation %>
 		</div>
