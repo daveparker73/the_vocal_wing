@@ -54,6 +54,9 @@
 							<div class="display-t">
 								<div class="display-tc">
 									<h1 class="animate-box" data-animate-effect="fadeIn">$SiteConfig.Title</h1>
+									<% if $Event %>
+										<h3>$Event</h3>
+									<% end_if %>
 								</div>
 							</div>
 						</div>

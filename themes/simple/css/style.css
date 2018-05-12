@@ -443,7 +443,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .gtco-cover .display-t,
 .gtco-cover .display-tc {
-  height: 900px;
+  height: 750px;
   display: table;
   width: 100%;
 }
@@ -787,7 +787,15 @@ form label {
   font-weight: 100;
   max-width: 400px;
 }
-
+#gtco-header .display-tc h3,
+.gtco-cover .display-tc h3 {
+  margin-bottom: 10px;
+  font-family: broadway;
+  font-size: 30px;
+  line-height: 1.5;
+  font-weight: 100;
+  max-width: 400px;
+}
 @media screen and (max-width: 768px) {
   #gtco-header .display-tc h1,
   .gtco-cover .display-tc h1 {

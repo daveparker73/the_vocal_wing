@@ -3,7 +3,8 @@
 class Page extends SiteTree
 {
   private static $db = array(
-  );
+		'Event' => 'Text'
+	);
 
   private static $has_one = array(
   );
@@ -15,6 +16,8 @@ class Page extends SiteTree
   public function getCMSFields() {
     $fields = parent::getCMSFields();
     $fields->removeByName('Content');
+    $fields->addFieldsToTab('Root.Main', TextField::create('Event'));
+    
     $sectionGrid = new GridField(
 			'ContentSection',
 			'Content Sections',
